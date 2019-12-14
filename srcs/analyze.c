@@ -6,7 +6,7 @@
 /*   By: srobert- <srobert-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 22:34:33 by david             #+#    #+#             */
-/*   Updated: 2019/12/13 21:18:23 by srobert-         ###   ########.fr       */
+/*   Updated: 2019/12/14 18:20:46 by srobert-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,13 @@
 void ignore_flags(t_flags *flags, int len)
 {
 	int tmp_width;
-	int tmp_precision;
+	int tmp_f_num;
 
 	if (flags->minus)
 		flags->zero = 0;
-	if (len > flags->precision)
-		flags->precision = 0;
+	tmp_width = (flags->width > flags->f_num) ? flags->width - flags->f_num : 0;
+	tmp_f_num = (flags->f_num > len) ? flags->f_num - len : 0;
+	// if
 
 }
 
