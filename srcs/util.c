@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   util.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
+/*   By: srobert- <srobert-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 06:40:03 by david             #+#    #+#             */
-/*   Updated: 2019/12/12 01:13:28 by david            ###   ########.fr       */
+/*   Updated: 2019/12/13 21:14:29 by srobert-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_flags init_flag(void)
 	flags.zero = 0;
 	flags.width = 0;
 	flags.dot = 0;
-	flags.f_num = 0;
+	flags.precision = 0;
 	return (flags);
 }
 
@@ -62,7 +62,7 @@ void debug_flags(t_flags flags)
 	printf("0 == %d\n", flags.zero);
 	printf("width == %d\n", flags.width);
 	printf("dot == %d\n", flags.dot);
-	printf("f_num == %d\n\n", flags.f_num);
+	printf("precision == %d\n\n", flags.precision);
 }
 
 int find_letter(const char *str, char c)

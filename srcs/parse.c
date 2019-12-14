@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parse.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
+/*   By: srobert- <srobert-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 06:55:31 by david             #+#    #+#             */
-/*   Updated: 2019/12/12 01:10:46 by david            ###   ########.fr       */
+/*   Updated: 2019/12/13 21:12:34 by srobert-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,8 +79,8 @@ int	check_flags(const char *format, t_flags *flags)
 			id++;
 			if (format[id] != '\0' && flags->dot == 1)
 			{
-				flags->f_num = ft_atoi(&format[id]);
-				id += num_len(flags->f_num);
+				flags->precision = ft_atoi(&format[id]);
+				id += num_len(flags->precision);
 			}
 			else if (flags->dot > 1)
 				id += num_len(ft_atoi(&format[id]));

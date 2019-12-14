@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
+/*   By: srobert- <srobert-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 05:28:56 by david             #+#    #+#             */
-/*   Updated: 2019/12/12 01:24:33 by david            ###   ########.fr       */
+/*   Updated: 2019/12/13 20:51:57 by srobert-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 int main()
 {
 	char *buff;
-	// ft_printf("hello \\ %07.6d's world %.5d year?\n", 100,10);
-	printf("hello \\ %-8.6 7d's world %.5d year?\n", -42,10);
+	ft_printf("hello \\ %07.6d's world %.5d year?\n", 100,10);
+	// printf("hello \\ %-8.6 7d's world %.5d year?\n", -42,10);
     return (0);
 }

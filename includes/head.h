@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   head.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
+/*   By: srobert- <srobert-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 05:25:45 by david             #+#    #+#             */
-/*   Updated: 2019/12/12 01:10:25 by david            ###   ########.fr       */
+/*   Updated: 2019/12/13 21:11:43 by srobert-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ typedef struct	s_flags
 	int			plus;
 	int			space;
 	int			width;
-	int			f_num;
+	int			precision;
 	int			dot;
 }				t_flags;
 
