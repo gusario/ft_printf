@@ -6,14 +6,14 @@
 #    By: david <david@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/12/11 08:13:17 by david             #+#    #+#              #
-#    Updated: 2019/12/11 22:54:09 by david            ###   ########.fr        #
+#    Updated: 2019/12/12 01:42:53 by david            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libprintf.a
 
 CC = gcc
-FLAGS =  #-Wall -Wextra -Werror
+FLAGS = -g #-Wall -Wextra -Werror
 LIBRARIES = -lm -lft -L$(LIBFT_DIRECTORY)
 INCLUDES = -I$(HEADERS_DIRECTORY) -I$(LIBFT_HEADERS)
 
